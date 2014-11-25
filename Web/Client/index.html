@@ -1,0 +1,33 @@
+<html ng-app="myApp">
+	<head>
+        <link rel="stylesheet" type="text/css" href="css/main.css?21">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/vendor/mousetrap.min.js"></script>        
+        <script src="js/bridge.js"></script>
+        <script src="js/bootstrap.js"></script>
+	</head>
+
+	<body ng-controller="AppCtrl">
+
+        <div class="top">
+            <a href="" ng-click='openSettings()'><i class="fa fa-cog"></i></a>
+            <a href="" ng-click='refresh()'><i class="fa fa-refresh"></i></a>            
+        </div>
+
+        <div class='wrapper'>    		
+
+    		<div ng-view></div>
+        
+        </div>
+        
+        <div class="md-overlay"></div>
+
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/vendor/angular-route.min.js"></script>
+        <script src="js/app/modules.js"></script>
+        <script src="js/app/app.js"></script>        
+        <script src="js/app/controllers.js"></script>
+        <script src="js/app/directives.js"></script>
+        <script src="js/app/factories.js"></script>        
+	</body>
+</html>

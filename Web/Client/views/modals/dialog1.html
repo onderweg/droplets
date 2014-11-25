@@ -1,0 +1,15 @@
+<div class="md-modal full" ng-controller="Dialog1Ctrl">
+    <div class="md-body">
+
+        <div class="form1">
+            <label for="token">OAuth token</label>
+            <p>Perosnal access token, generated in 'Apps &amp; API', in Digital Ocean control panel</p>
+            <input name="token" ng-model="token" class="input-full" placeholder="OAuth bearer token" type="text"/>            
+        </div>
+    </div> 
+
+    <footer class="md-footer">
+        <button ng-click='close()' class="btn">Cancel</button>
+        <button ng-click='save()' class="btn primary">Save</button>
+    </footer>       
+</div>

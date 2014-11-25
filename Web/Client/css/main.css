@@ -1,0 +1,298 @@
+html {
+
+}
+
+body {
+	color: #333;
+	font-family:Helvetica;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	-webkit-text-stroke: 0.35px
+}
+
+h1 {
+	margin: 15px 0;	
+	font-size: 2.0rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+select, textarea, input[type="text"], input[type="password"] {
+	display: inline-block;
+	height: 20px;
+	padding: 14px 6px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+small {
+	font-size: 0.8rem;
+}
+
+/* main containers */
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* top */
+
+.top {
+	padding: 7px 7px;
+	font-size: 18px;
+	background: white;
+	border-bottom: 1px solid #f3f3f3;	
+}
+
+.top a {
+	color: #999;	
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+/* error */
+
+.error {
+	background: lightcoral;
+	padding: 10px;
+	margin: 25px 0;
+}
+
+/* loader */
+
+.loader {
+	padding: 10px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.loader:before {
+
+}
+
+/* list */
+
+ul.item-list {
+	list-style-type: none;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;	
+}
+
+ul.item-list li {
+	position: relative;
+	cursor: initial;
+	padding: 15px 30px 15px 30px;
+	border-bottom: 1px solid white;
+}
+
+ul.item-list li header {
+	margin-bottom: 15px;
+}
+
+ul.item-list li:hover {	
+}
+
+li.status-active {
+	background: #c4ecc6;
+}
+li.status-active:hover {
+	background: lightgreen;
+}
+
+li.status-off {
+	background: lightcoral;
+}
+
+li.status-active .label {
+	background-color: #5cb85c;
+}
+
+li.status-off .label {
+	background-color: #d9534f;
+}
+
+li .item-title {
+	display: inline-block;
+	font-size: 30px;
+	vertical-align: middle;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 15px;
+}
+
+li .item-details {
+	color: #556;
+	display: block;
+	font-size: 0.8rem;
+}
+
+li .item-actions {
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	color: #666;
+}
+
+li:hover .item-actions {
+	display: block;
+}
+
+li .item-actions a:hover {
+	font-weight: bold;
+	color: black;
+}
+
+/* buttons */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 5px 5px;
+	font-size: 1.3rem;
+	padding: 6px 12px;
+	border-radius: 8px;
+	border: none;
+	text-shadow: none;
+	cursor: pointer;
+	color: #333;
+	background-color: #eee;
+}
+
+.btn:hover {
+
+}
+
+.btn.primary {
+	background-color: #2ecc71;
+	color: #fff;
+}
+
+/* inputs */
+
+.input-xlarge {
+	width: 530px;
+}
+
+.input-full {
+	width: 100%;
+}
+
+/* labels */
+
+.label {
+	display: inline;
+	cursor: default;
+	padding: .2em .6em .3em;
+	font-size: 0.75em; /*75%;	*/
+	line-height: 1;
+	color: #fff;
+	background-color: #777;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+}
+
+.label-success {
+	background-color: #5cb85c;
+}
+
+.label-danger {
+	background-color: #d9534f;
+}
+
+/* form1 */
+
+.form1 {
+	font-size: 1.3rem;
+}
+.form1 label {
+	display: block;
+	margin: 20px 0;
+}
+
+.form1 p {
+	font-size: 13px;
+	color: #CCC;
+}
+
+/* dialog */
+
+/* Based on http://tympanus.net/Development/ModalWindowEffects */
+
+.md-modal {
+  position: fixed;
+  top: 25%;
+  left: 0%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  border: 1px solid #666;  
+}
+
+.md-modal.full {
+	width: 100%;
+	max-width: 100%;
+}
+ 
+.md-show {
+    visibility: visible;
+}
+ 
+.md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    background: rgba(0,0,0,0.4);
+    transition: all 0.3s;
+}
+ 
+.md-show ~ .md-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Content styles */
+
+.md-body, .md-footer {
+	position: relative;
+	background: white;
+	color: #333;
+  
+}
+.md-body {
+	border-top-right-radius: inherit;
+	border-top-left-radius: inherit;
+	padding: 20px 30px;
+}
+
+.md-footer {
+	padding: 15px 30px;
+	border-top: 1px solid #f3f3f3;	
+	border-bottom-right-radius: inherit;
+	border-bottom-left-radius: inherit;	
+}

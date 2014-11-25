@@ -1,0 +1,7 @@
+# OS X noise
+.DS_Store
+
+# XCode personal settings
+*.xcworkspace
+!default.xcworkspace
+xcuserdata

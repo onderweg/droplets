@@ -1,0 +1,28 @@
+<section>
+	<h1>
+		<i class="fa fa-cloud"></i> Droplets <span ng-if="droplets.length">({{ droplets.length }})</span>
+	</h1>
+
+	<ul ng-if="!loading" class="item-list">
+		<li ng-repeat="droplet in droplets" class="status-{{droplet.status}}">
+			<header>
+				<h3 class='item-title'><i class="fa fa-laptop"></i> {{ droplet.name }}</h3>
+
+				<span class='label' title='droplet status'>{{ droplet.status }}</span>
+			</header>
+			
+			<small class='item-details'>{{ droplet.kernel.name }}</small>
+
+			<div class='item-actions'>
+				<a href='#' ng-if="droplet.status=='off'" ng-click='onDropletClick(droplet)' title='Power on'><i class="fa fa-play"></i></a>
+			</div
+		</li>
+	</ul>
+
+	<div ng-if="loading" class='loader'>
+		<span>Loading...</span>
+	</div>
+	<div ng-if="error" class='error'>
+		<span>{{ error }}</span>
+	</div>	
+</section>

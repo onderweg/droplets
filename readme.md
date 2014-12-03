@@ -25,6 +25,13 @@ Consider this an alpha version. This project is not activly maintained. I make n
 - [practicalswift.com](http://practicalswift.com/2014/06/27/a-minimal-webkit-browser-in-30-lines-of-swift/) for webview tutorial in Swift.
 - [Santosh Rajan](https://medium.com/swift-programming/http-in-swift-693b3a7bf086) for tutorial on HTTP/JSON requests in Swift
 
+##Similar
+
+Similar (and more mature :) ) projects:
+
+- [node-webkit](https://github.com/rogerwang/node-webkit): "write native apps in HTML and JavaScript
+- [atom-shell](https://github.com/atom/atom-shell): "cross-platform desktop applications using JavaScript, HTML and CSS"
+
 ##Attributions/Credits
 
 - Icon "Drop" by Márcio Pinhole from The Noun Project, licensed under Creative

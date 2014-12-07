@@ -17,7 +17,7 @@ Consider this an alpha version. This project is not activly maintained. I make n
 ##Building/Running
 
 - Make sure NodeJS is installed and runnable from `/usr/local/bin/node`. A NodeJS script serves statics files to the WKWebview in the app.
-- Build the project in XCode.
+- Build the project in XCode. (tested wit 6.1.1)
 - After startup, you need to enter your Digital Ocean oAuth token in the settings screen (cog wheel icon). You need a token with read+write access.
 
 ##Thanks to

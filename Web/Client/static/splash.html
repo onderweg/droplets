@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<style>
+			body {
+				position: relative;
+				font-family: Helvetica;
+			}
+			.wrapper {
+				display: table;
+				width: 100%;
+				min-height: 100%;				
+				text-align: center;		
+				
+			}
+
+			.content {
+				display: table-cell;
+				vertical-align: middle;						
+			}
+
+			h1 {
+                color: #CCC;
+				font-size: 30px;
+				text-align: center;
+			}
+		
+		</style>
+	</head>
+
+	<body>
+		<div class='wrapper'>
+
+			<div class='content'>
+				<h1>Droplets.</h1>
+
+				<div style="margin: 0 auto" class='loader loader--circularSquare'></div>
+
+				<div class="loader" title="2" style="margin: 0 auto;">
+                    <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
+                    <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#3686be">
+                        <g fill="none" fill-rule="evenodd" stroke-width="2">
+                            <circle cx="22" cy="22" r="1">
+                                <animate attributeName="r"
+                                begin="0s" dur="1.8s"
+                                values="1; 20"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.165, 0.84, 0.44, 1"
+                                repeatCount="indefinite" />
+                                <animate attributeName="stroke-opacity"
+                                begin="0s" dur="1.8s"
+                                values="1; 0"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.3, 0.61, 0.355, 1"
+                                repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="22" cy="22" r="1">
+                                <animate attributeName="r"
+                                begin="-0.9s" dur="1.8s"
+                                values="1; 20"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.165, 0.84, 0.44, 1"
+                                repeatCount="indefinite" />
+                                <animate attributeName="stroke-opacity"
+                                begin="-0.9s" dur="1.8s"
+                                values="1; 0"
+                                calcMode="spline"
+                                keyTimes="0; 1"
+                                keySplines="0.3, 0.61, 0.355, 1"
+                                repeatCount="indefinite" />
+                            </circle>
+                        </g>
+                    </svg>
+				</div>	
+
+			</div><!-- .content -->		
+
+		</div><!-- .wrapper -->
+	</body>
+</html>

@@ -18,7 +18,7 @@ class ApplicationDelegate: NSObject, NSApplicationDelegate {
     
     private(set) var webView : WKWebView?;
     
-    private let PORT:UInt = 9067;
+    private let PORT:UInt = 9066;
     
     init(window: NSWindow) {
         self._window = window
@@ -28,8 +28,6 @@ class ApplicationDelegate: NSObject, NSApplicationDelegate {
         self.setupDefaults();
         
         self.setupMenu();
-        
-        self.setupServer();
         
         self.setupWebview();    
     }
@@ -53,7 +51,7 @@ class ApplicationDelegate: NSObject, NSApplicationDelegate {
         var tree = [
             "Edit": [
                 NSMenuItem(title: "Copy", action: "copy:", keyEquivalent:"c"),
-                NSMenuItem(title: "Paste", action: "paste:", keyEquivalent:"p")
+                NSMenuItem(title: "Paste", action: "paste:", keyEquivalent:"v")
             ],
             "Apple": [
                 NSMenuItem(title: "About", action: "orderFrontStandardAboutPanel:", keyEquivalent:""),
@@ -105,11 +103,25 @@ class ApplicationDelegate: NSObject, NSApplicationDelegate {
             configuration: config)
         self._window.contentView!.addSubview(webView)
         webView.autoresizingMask = NSAutoresizingMaskOptions.ViewWidthSizable | NSAutoresizingMaskOptions.ViewHeightSizable // Make resizable
+        
+        // Load spash screen
+        var path =  NSBundle.mainBundle().pathForResource("splash", ofType: "html",
+            inDirectory: "Web/client/static")!;
+        var splashUrl = NSURL(fileURLWithPath: path);
+        webView.loadRequest(NSURLRequest(URL: splashUrl!));
+        
+        // Start server
+        self.setupServer();
 
         // Load content
-        var url = NSURL(string: "http://localhost:\(PORT)/index.html");
-        var request = NSURLRequest(URL: url!)
-        webView.loadRequest(request);
+        Timer.start(0.7, repeats: false) {
+            (t: NSTimer) in
+            
+            var url = NSURL(string: "http://localhost:\(self.PORT)/index.html");
+            var request = NSURLRequest(URL: url!)
+            webView.loadRequest(request);
+            self.webView = webView;
+        }
         
         self.webView = webView;
     }

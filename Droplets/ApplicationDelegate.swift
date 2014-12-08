@@ -99,9 +99,9 @@ class ApplicationDelegate: NSObject, NSApplicationDelegate {
         // Create webview
         // http://practicalswift.com/2014/06/27/a-minimal-webkit-browser-in-30-lines-of-swift/
         
-        let webView = WKWebView(frame: self._window.contentView!.frame,
+        let webView = WKWebView(frame: self._window.contentView.frame,
             configuration: config)
-        self._window.contentView!.addSubview(webView)
+        self._window.contentView.addSubview(webView)
         webView.autoresizingMask = NSAutoresizingMaskOptions.ViewWidthSizable | NSAutoresizingMaskOptions.ViewHeightSizable // Make resizable
         
         // Load spash screen

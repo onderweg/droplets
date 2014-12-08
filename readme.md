@@ -31,6 +31,7 @@ Similar (and more mature :) ) projects:
 
 - [node-webkit](https://github.com/rogerwang/node-webkit): "write native apps in HTML and JavaScript
 - [atom-shell](https://github.com/atom/atom-shell): "cross-platform desktop applications using JavaScript, HTML and CSS"
+- [MacGap](https://github.com/MacGapProject): "Desktop WebKit wrapper for HTML/CSS/JS applications."
 
 ##Attributions/Credits
 

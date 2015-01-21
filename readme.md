@@ -5,8 +5,10 @@ I chose to use the Digital Ocean API as a use case.
 
 Idea:
 
-- Run local webserver in nodejs, which serves static files
-- Load static site, build with AngularJS, from webview
+- Run local webserver in nodejs, which serves static files (HTML/JS/CSS)
+- Load static site, build with AngularJS, in a webview embeded in a native OS X app
+
+So, Droplets is essentially a OS X app build with Angular.
 
 The app shows your Digital Ocean droplets.
 

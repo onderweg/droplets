@@ -1,0 +1,6 @@
+Licence
+=======
+
+This work is licensed under a [Creative Commons Attribution 3.0 Unported][licence].
+
+[licence]: http://creativecommons.org/licenses/by/3.0/

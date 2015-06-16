@@ -21,6 +21,8 @@ Consider this an alpha version. This project is not activly maintained. I make n
 - Make sure NodeJS is installed and runnable from `/usr/local/bin/node`. A NodeJS script serves statics files to the WKWebview in the app.
 - Build the project in XCode. (tested wit 6.1.1)
 - After startup, you need to enter your Digital Ocean oAuth token in the settings screen (cog wheel icon). You need a token with read+write access.
+ 
+Note: Breaking changes are introduced regularly in the Swift language. This project might not be up to date with the latest version.
 
 ##Thanks to
 
@@ -32,7 +34,7 @@ Consider this an alpha version. This project is not activly maintained. I make n
 Similar (and more mature :) ) projects:
 
 - [node-webkit](https://github.com/rogerwang/node-webkit): "write native apps in HTML and JavaScript
-- [atom-shell](https://github.com/atom/atom-shell): "cross-platform desktop applications using JavaScript, HTML and CSS"
+- [electron](https://github.com/atom/electron): "lets you write cross-platform desktop applications using JavaScript, HTML and CSS". Formerly known as "atom-shell"
 - [MacGap](https://github.com/MacGapProject): "Desktop WebKit wrapper for HTML/CSS/JS applications."
 
 ##Attributions/Credits
